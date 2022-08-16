@@ -2,6 +2,7 @@
 import { h } from "preact";
 import { tw } from "@twind";
 import Layout from "../components/Layout.tsx";
+import Footer from "../components/Footer.tsx";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
     <p class={tw`mx-10 my-6 text-4xl`}>
       If you prefer to play abstract strategy games without the story and theme, feel free to skip reading the chapters.  
     </p>
-  </div>
+    <Footer />
+    </div>
   );
 }

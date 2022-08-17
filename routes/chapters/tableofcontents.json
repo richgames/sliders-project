@@ -2,18 +2,21 @@
   "prologue": {
     "title": "Prologue"
   },
-  "chapter-01": {
+  "ch01": {
     "title": "Chapter 1: The Lab",
     "pages": [
       ["the-lab", "The Lab"],
       ["ch1-rules", "Rules"]
     ]
   },
-  "chapter-02": {
+  "ch02": {
     "title": "Chapter 2: The Space Between",
     "pages": [
       ["space-between", "The Space Betwen"],
       ["ch2-rules", "Rules"]
     ]
+  },
+  "ch03": {
+    "title": "Chapter 3: The Ship"
   }
 }

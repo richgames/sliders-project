@@ -23,7 +23,25 @@ export default function Downloads() {
             Chapter 1: The Lab
           </a>
         </li>
+        <li>
+          <a href=""class={tw`mx-10 my-6 text-2xl`}>
+            Chapter 2: The Space Between (Coming soon)
+          </a>
+        </li>
+        <li>
+          <a href=""class={tw`mx-10 my-6 text-2xl`}>
+            Chapter 3: The Ship (Coming soon)
+          </a>
+        </li>
+        <li>
+          <a href="sliders-board.pdf"class={tw`mx-10 my-6 text-2xl`}>
+            Sliders Board
+          </a>
+        </li>
       </ul>
+      <div class={tw`bg-green-100`}>
+      About the Board:
+      </div>
     </div>
   );
 }

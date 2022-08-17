@@ -2,6 +2,7 @@
 import { h } from "preact";
 import { tw } from "@twind";
 import Layout from "../components/Layout.tsx";
+import Footer from "../components/Footer.tsx";
 
 export default function About() {
   return (
@@ -17,7 +18,7 @@ export default function About() {
        Sliders is an idea to take the immersive nature of storytelling to abstract strategy games. Although typically used in role playing games, storytelling and themes can also bring to life abstract strategy games in a fun and exciting way.
      </p>
 
-  
+      <Footer />
     </div>
   );
 }

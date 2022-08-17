@@ -21,12 +21,10 @@ export default function Layout() {
             </li>  
             <li class={tw`active:font-bold hover:underline`}>
               <a href="/about">About</a>
-            </li>  
+            </li> 
             <li class={tw`active:font-bold hover:underline`}>
-              <a href="/chapters">
-                Chapters
-              </a>
-            </li>
+              <a href="/chapters">Chapters</a>
+            </li>  
             <li class={tw`active:font-bold hover:underline`}>
               <a href="/downloads">
                 Downloads

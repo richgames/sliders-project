@@ -30,7 +30,7 @@ export const handler = {
 function Content ({ page }) {
   const html = gfm.render(page.markdown);
   return (
-    <main class={tw`mt-4`}>
+    <main class={tw`mt-4 w-2/3`}>
       <h1 class={tw`text-4xl text-gray-900 mt-6`}>
         {page.title}
       </h1>
@@ -44,10 +44,9 @@ function Content ({ page }) {
 }
 
 function Main(props) {
-  console.log("Main props:", props);
   const { page } = props.data;
   return (
-    <div class={tw`max-w-screen-lg flex gap-6`}>
+    <div class={tw`max-w-screen-lg flex grow gap-6`}>
       <ChapterNavBar path={props.url.pathname} />
       <Content page={page} />
     </div>

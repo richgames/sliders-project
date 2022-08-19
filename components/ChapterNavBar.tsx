@@ -6,7 +6,7 @@ import { TABLE_OF_CONTENTS, CHAPTERS } from "../data/chapters.ts";
 export default function ChapterNavBar({ path }) {
   console.log("CHAPTERS", CHAPTERS)
   return (
-    <div class={tw`h-screen w-80 pt-10 pb-10 pl-10 bg-green-100`}>
+    <div class={tw`h-screen w-auto pt-10 pb-10 pl-10 pr-10 bg-green-100`}>
       <ol>
         {CHAPTERS.map((chapter) => {
           return (

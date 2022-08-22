@@ -1,11 +1,18 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
+import { Head, asset } from "$fresh/runtime.ts";
 import Layout from "../components/Layout.tsx";
 import Footer from "../components/Footer.tsx";
 
 export default function Home() {
   return (
+
+    <html>
+    <Head>
+      <script type="module" src={asset('./modelviewer/model-viewer.min.js')}></script>
+    </Head>
+    
     <div class={tw`bg-purple-100 min-h-screen`}>
       <Layout />
       <p class={tw`mx-10 my-6 text-4xl`}>
@@ -19,5 +26,6 @@ export default function Home() {
       </p>
       <Footer />
     </div>
+    </html>
   );
 }

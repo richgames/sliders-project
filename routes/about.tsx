@@ -18,6 +18,12 @@ export default function About() {
        Sliders is an idea to take the immersive nature of storytelling to abstract strategy games. Although typically used in role playing games, storytelling and themes can also bring to life abstract strategy games in a fun and exciting way.
      </p>
 
+      <p class={tw`mx-10 my-6 text-1xl`}>
+          All text and illustrations are licensed under the following: <br />
+          <a class={tw`underline`} href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+            Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported
+          </a> 
+      </p>
       <Footer />
     </div>
   );

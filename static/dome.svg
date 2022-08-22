@@ -1,0 +1,11 @@
+<svg height="200px" 
+     width="200px">
+  <!--<circle cx="50" cy="50" r="50" />-->
+  <g transform="rotate(0, 100, 100)" >
+     <path d="M 0 100
+           A 100 100 0 0 1 200 100
+           L 0 100
+           Z" 
+        fill="orange" />
+  </g>
+</svg>

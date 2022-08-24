@@ -1,12 +1,13 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
+import { Head, asset } from "$fresh/runtime.ts";
 import Layout from "../components/Layout.tsx";
 import Footer from "../components/Footer.tsx";
 
 export default function About() {
   return (
-    <div class={tw`bg-purple-100 min-h-screen`}>
+    <div class={tw`bg-purple-100 min-h-screen`} style={`min-height: 100vh; background-image: url("${asset("./sliders-close-up.jpg")}"); background-size: cover;`}>
       <Layout />
       <p class={tw`mx-10 my-6 text-4xl`}>
         Sliders is a game about escaping the dying planet of Xolo.

@@ -12,18 +12,19 @@ export default function Home() {
     <Head>
       <script type="module" src={asset('./modelviewer/model-viewer.min.js')}></script>
     </Head>
-    
-    <div class={tw`bg-purple-100 min-h-screen`}>
-      <Layout />
-      <p class={tw`mx-10 my-6 text-4xl`}>
-        Sliders is a game for 2 players.
-      </p>
-      <p class={tw`mx-10 my-6 text-4xl`}>
-        Each chapter takes about 20 minutes to play and progresses the story.
-      </p>
-      <p class={tw`mx-10 my-6 text-4xl`}>
-        If you prefer to play abstract strategy games without the story and theme, feel free to skip reading the chapters.  
-      </p>
+    <Layout />
+    <div class={tw`flex flex-col justify-between`} style={`min-height: 100vh; background-image: url("${asset("./sliders-close-up.jpg")}"); background-size: container;`}>
+      <div>
+        <p class={tw`mx-10 my-6 text-4xl`}>
+          Sliders is a game for 2 players.
+        </p>
+        <p class={tw`mx-10 my-6 text-4xl`}>
+          Each chapter takes about 20 minutes to play and progresses the story.
+        </p>
+        <p class={tw`mx-10 my-6 text-4xl`}>
+          If you prefer to play abstract strategy games without the story and theme, feel free to skip reading the chapters.  
+        </p>
+      </div>
       <Footer />
     </div>
     </html>

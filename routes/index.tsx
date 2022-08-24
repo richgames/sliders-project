@@ -16,13 +16,19 @@ export default function Home() {
     <div class={tw`flex flex-col justify-between`} style={`min-height: 100vh; background-image: url("${asset("./sliders-close-up.jpg")}"); background-size: container;`}>
       <div>
         <p class={tw`mx-10 my-6 text-4xl`}>
-          Sliders is a game for 2 players.
+          <mark style="background: rgba(255, 255, 255, .4) !important">
+            Sliders is a game for 2 players.
+          </mark>  
         </p>
         <p class={tw`mx-10 my-6 text-4xl`}>
-          Each chapter takes about 20 minutes to play and progresses the story.
+          <mark style="background: rgba(255, 255, 255, .4) !important">
+            Each chapter takes about 20 minutes to play and progresses the story.
+          </mark>
         </p>
         <p class={tw`mx-10 my-6 text-4xl`}>
-          If you prefer to play abstract strategy games without the story and theme, feel free to skip reading the chapters.  
+          <mark style="background: rgba(255, 255, 255, .4) !important">
+            If you prefer to play abstract strategy games without the story and theme, feel free to skip reading the chapters.  
+          </mark>
         </p>
       </div>
       <Footer />

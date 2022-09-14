@@ -9,6 +9,9 @@
       ["ch1-rules", "Rules"]
     ]
   },
+   "ch01-rules": {
+    "title": "Chapter 1 Rules"
+  },
   "ch02": {
     "title": "Chapter 2: The Space Between",
     "pages": [

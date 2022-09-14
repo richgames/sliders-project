@@ -1,6 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
+import { Head } from "$fresh/runtime.ts";
 import { frontMatter, gfm } from "../../utils/markdown.ts";
 import Layout from "../../components/Layout.tsx";
 import ChapterNavBar from "../../components/ChapterNavBar.tsx";
@@ -35,7 +36,7 @@ function Content ({ page }) {
         {page.title}
       </h1>
       <div
-        class={tw`mt-6`}
+        class={tw`mt-6` + " markdown-body"}
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </main>
@@ -57,9 +58,14 @@ function Main(props) {
 export default function ChapterPage(props) {
   console.log("ChapterPage:", props)
   return (
-    <div class={tw`bg-purple-100 min-h-screen`}>
-      <Layout />
-      <Main {...props} />
+    <div>
+      <Head>
+        <link rel="stylesheet" href="/styles.css" />
+      </Head>
+      <div class={tw`bg-purple-100 min-h-screen`}>
+        <Layout />
+        <Main {...props} />
+      </div>
     </div>
   );
 }

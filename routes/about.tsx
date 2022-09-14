@@ -26,7 +26,7 @@ export default function About() {
          exciting way.</mark>
      </p>
 
-      <p class={tw`mx-10 my-6 text-1xl text-white`}>
+      <p class={tw`mx-10 my-6 text-1xl text-black`}>
           All text and illustrations are licensed under the following: <br />
           <a class={tw`underline`} href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
             Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported
